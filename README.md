@@ -16,3 +16,5 @@ Things you may want to cover:
 * Services: a `crobjob` (created by `whenever`) is used on production to fetch news list automatically every 5 minutes. See `config/schedule.rb` for more detail
 
 * Deployment instructions: `cap production deploy`
+
+* Related Repo: checkout `https://github.com/tomhieu/hacker_news_frontend` for frontend app
