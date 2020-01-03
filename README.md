@@ -5,20 +5,14 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: `2.6.2`
 
-* System dependencies
+* System dependencies: `redis-server` for caching
 
-* Configuration
+* Configuration: `cp ./config/database.yml.example ./config/database.yml` (although we dont need database, we have to create config file as rails requires)
 
-* Database creation
+* Run the test suite: `rspec`
 
-* Database initialization
+* Services: a `crobjob` (created by `whenever`) is used on production to fetch news list automatically every 5 minutes. See `config/schedule.rb` for more detail
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Deployment instructions: `cap production deploy`
